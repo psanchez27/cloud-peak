@@ -5,7 +5,13 @@
   <div class="footer-main">
     <div class="footer-menu">
       <nav>
-        footer menu
+        <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'cloud_peak_footer_menu'
+            )
+          );
+        ?>
       </nav>
     </div>
   </div>

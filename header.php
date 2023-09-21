@@ -32,7 +32,13 @@
 
     <!-- Nav Menu -->
     <nav id="main-menu" class="main-menu">
-      Nav here
+      <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'cloud_peak_primary_menu'
+          )
+        );
+      ?>
     </nav>
   </div>
 

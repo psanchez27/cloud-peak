@@ -7,3 +7,16 @@ function cloud_peak_enqueue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'cloud_peak_enqueue_scripts' );
+
+// config function
+function cloud_peak_config() {
+  //Register nav menus
+  register_nav_menus(
+    array(
+      'cloud_peak_primary_menu' => 'Main Menu',
+      'clous_peak_footer_menu' => 'Footer Menu'
+    )
+  );
+}
+
+add_action( 'after_setup_theme', 'cloud_peak_config' );
