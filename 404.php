@@ -2,7 +2,7 @@
 
 <main>
   <div class="page-container e404">
-    <h1>Pahe not dound</h1>
+    <h1>Page not dound</h1>
     <p>Unfortunately, the page you tried to reach does not exist.</p>
 
     <!-- Display recent post -->
