@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-    <div class="container search-page">
+    <div class="page-container search-page">
     
     <!-- Page title -->
     <h1><?php wp_title( '' ); ?></h1>
