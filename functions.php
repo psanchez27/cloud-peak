@@ -1,5 +1,8 @@
 <?php
 
+//Load theme customizer
+require get_template_directory() . '/inc/customizer.php';
+
 function cloud_peak_enqueue_scripts() {
   //load theme info stysheet
   wp_enqueue_style( 'cloud-peak-theme-info', get_stylesheet_uri(), array(), wp_get_theme()->get( 'version' ), 'all' );
@@ -21,3 +24,29 @@ function cloud_peak_config() {
 }
 
 add_action( 'after_setup_theme', 'cloud_peak_config' );
+
+
+
+// Customizer API css options ********************************************************************************
+function cloud_peak_customize_css(){
+  ?>
+  <!-- Banner alert styles  -->
+
+  <style>
+
+  /* Footer Style */
+    footer{
+      background-color: <?php echo get_theme_mod( 'set_footer_background_color' ); ?>;
+      color: <?php echo get_theme_mod( 'set_footer_text_color' ); ?>;
+    }
+    footer ul li a{
+      color: <?php echo get_theme_mod( 'set_footer_text_color' ); ?>;
+    }
+
+  </style>
+
+
+  <?php
+}
+
+add_action( 'wp_footer', 'cloud_peak_customize_css' );
