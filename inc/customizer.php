@@ -12,6 +12,25 @@ $wp_customize->add_section(
   )
 );
 
+//Settings for Fixed header
+$wp_customize->add_setting(
+  'set_sticky_header',
+  array(
+    'type' => 'theme_mod',
+    'default' => 0
+  )
+);
+
+$wp_customize->add_control(
+  'set_sticky_header',
+  array(
+    'label' => 'Stick to top',
+    'description' => 'Fix the main header to the top of the page',
+    'section' => 'sec_header',
+    'type' => 'checkbox'
+  )
+);
+
 //Settings for header banner text
 $wp_customize->add_setting(
   'set_banner',

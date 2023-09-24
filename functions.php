@@ -28,26 +28,39 @@ add_action( 'after_setup_theme', 'cloud_peak_config' );
 
 
 // Customizer API css options ********************************************************************************
-function cloud_peak_customize_css(){
-  ?>
-  <!-- Banner alert styles  -->
+function cloud_peak_customize_css(){ ?>
+  
+     <!-- sticky header styles -->
+      <?php if ( get_theme_mod( 'set_sticky_header' )  == 1 ) : ?>
+        <script>
+          header.classList.add('fixed')
+        </script>
+
+        <?php else : ?>
+
+        <script>
+          fixedHeader = document.getElementById('header')
+          header.classList.remove('fixed')
+        </script>
+
+
+<?php endif; ?>
 
   <style>
+    /* Banner alert styles */
+      .header-top{
+        background-color: <?php echo get_theme_mod( 'set_banner_bg_color' ); ?>;
+        color: <?php echo get_theme_mod( 'set_banner_text_color' ); ?>;
+      }
 
-    /* Header banner styles */
-    .header-top{
-      background-color: <?php echo get_theme_mod( 'set_banner_bg_color' ); ?>;
-      color: <?php echo get_theme_mod( 'set_banner_text_color' ); ?>;
-    }
-
-    .header-main{
-      background-color: <?php echo get_theme_mod( 'set_main_header_bg_color' ); ?>;
-      color: <?php echo get_theme_mod( 'set_main_header_text_color' ); ?>;
-    }
-
-    .header-main a{
-      color: <?php echo get_theme_mod( 'set_main_header_text_color' ); ?>;
-    }
+    /* Main header styles */
+      .header-main{
+        background-color: <?php echo get_theme_mod( 'set_main_header_bg_color' ); ?>;
+        color: <?php echo get_theme_mod( 'set_main_header_text_color' ); ?>;
+      }
+      .header-main a{
+        color: <?php echo get_theme_mod( 'set_main_header_text_color' ); ?>;
+      }
 
     /* Footer Style */
       footer{
