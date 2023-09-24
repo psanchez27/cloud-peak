@@ -52,7 +52,6 @@ $wp_customize->add_control(
 );
 
 //Settings for header banner styling
-
 //Background colors
 $wp_customize->add_setting(
   'set_banner_bg_color',
@@ -96,7 +95,6 @@ $wp_customize->add_control(
 );
 
 //Settings for main header styling
-
 //Background colors
 $wp_customize->add_setting(
   'set_main_header_bg_color',
@@ -135,6 +133,51 @@ $wp_customize->add_control(
       'description' => 'Text color for main header',
       'section' => 'sec_header',
       'settings' => 'set_main_header_text_color'
+    )
+  )
+);
+
+//settings for mobile menu
+//Background color
+$wp_customize->add_setting(
+  'set_mobile_menu_bg_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#222'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_mobile_menu_bg_color_control',
+    array(
+      'label' => 'Mobile menu background color',
+      'description' => 'Set the background color for the mobile menu',
+      'section' => 'sec_header',
+      'settings' => 'set_mobile_menu_bg_color'
+    )
+  )
+);
+
+//Text color
+$wp_customize->add_setting(
+  'set_mobile_menu_text_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#fff'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_mobile_menu_text_color_control',
+    array(
+      'label' => 'Mobile menu text color',
+      'description' => 'Set the text color for the mobile menu',
+      'section' => 'sec_header',
+      'settings' => 'set_mobile_menu_text_color'
     )
   )
 );
