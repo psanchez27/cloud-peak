@@ -40,6 +40,15 @@ function cloud_peak_customize_css(){
       color: <?php echo get_theme_mod( 'set_banner_text_color' ); ?>;
     }
 
+    .header-main{
+      background-color: <?php echo get_theme_mod( 'set_main_header_bg_color' ); ?>;
+      color: <?php echo get_theme_mod( 'set_main_header_text_color' ); ?>;
+    }
+
+    .header-main a{
+      color: <?php echo get_theme_mod( 'set_main_header_text_color' ); ?>;
+    }
+
     /* Footer Style */
       footer{
         background-color: <?php echo get_theme_mod( 'set_footer_background_color' ); ?>;

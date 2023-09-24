@@ -76,6 +76,50 @@ $wp_customize->add_control(
   )
 );
 
+//Settings for main header styling
+
+//Background colors
+$wp_customize->add_setting(
+  'set_main_header_bg_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#222',
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_main_header_bg_color_control',
+    array(
+      'label' => "Main header background color",
+      'description' => 'Background color for main header',
+      'section' => 'sec_header',
+      'settings' => 'set_main_header_bg_color'
+) ) );
+
+//Text color
+$wp_customize->add_setting(
+  'set_main_header_text_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#fff'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_main_header_text_color_control',
+    array(
+      'label' => 'Main header text Color',
+      'description' => 'Text color for main header',
+      'section' => 'sec_header',
+      'settings' => 'set_main_header_text_color'
+    )
+  )
+);
+
 // 2 Footer Section ****************************************************************************************
 $wp_customize->add_section(
   'sec_footer',
