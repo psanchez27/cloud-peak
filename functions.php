@@ -34,14 +34,20 @@ function cloud_peak_customize_css(){
 
   <style>
 
-  /* Footer Style */
-    footer{
-      background-color: <?php echo get_theme_mod( 'set_footer_background_color' ); ?>;
-      color: <?php echo get_theme_mod( 'set_footer_text_color' ); ?>;
+    /* Header banner styles */
+    .header-top{
+      background-color: <?php echo get_theme_mod( 'set_banner_bg_color' ); ?>;
+      color: <?php echo get_theme_mod( 'set_banner_text_color' ); ?>;
     }
-    footer ul li a{
-      color: <?php echo get_theme_mod( 'set_footer_text_color' ); ?>;
-    }
+
+    /* Footer Style */
+      footer{
+        background-color: <?php echo get_theme_mod( 'set_footer_background_color' ); ?>;
+        color: <?php echo get_theme_mod( 'set_footer_text_color' ); ?>;
+      }
+      footer ul li a{
+        color: <?php echo get_theme_mod( 'set_footer_text_color' ); ?>;
+      }
 
   </style>
 

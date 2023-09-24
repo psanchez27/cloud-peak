@@ -11,6 +11,13 @@
 <!-- Header Start -->
 <header id="header" class="header">
 
+<!-- Header banner -->
+<?php if ( !empty( get_theme_mod( 'set_banner') ) ) : ?>
+    <div class="header-top">
+      <?php echo get_theme_mod( 'set_banner', '' ); endif; ?>
+    </div>
+
+  <!-- Main header -->
   <div class="header-main">
       <!-- Logo or site title -->
     <div class="branding">
