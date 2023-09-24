@@ -8,6 +8,11 @@ function cloud_peak_enqueue_scripts() {
   wp_enqueue_style( 'cloud-peak-theme-info', get_stylesheet_uri(), array(), wp_get_theme()->get( 'version' ), 'all' );
   //load main style sheet
   wp_enqueue_style( 'cloud-peak-main-styles', get_template_directory_uri() . '/assets/css/styles-main.css', array(), wp_get_theme()->get( 'version' ), 'all' );
+
+  //load main scripts file
+  wp_enqueue_script('cloud-peak-main-scripts', get_template_directory_uri() . '/assets/js/app.js', array(), wp_get_theme()->get( 'version' ), true );
+  //load header shrink js file
+  wp_enqueue_script('cloud-peak-header-shrink-script', get_template_directory_uri() . '/assets/js/header-shrink.js', array(), wp_get_theme()->get( 'version' ), true );
 }
 
 add_action( 'wp_enqueue_scripts', 'cloud_peak_enqueue_scripts' );
