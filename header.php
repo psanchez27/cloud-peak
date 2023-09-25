@@ -12,7 +12,7 @@
 <header id="header" class="header">
 
 <!-- Header banner -->
-<?php if ( !empty( get_theme_mod( 'set_banner') ) ) : ?>
+<?php if ( ! empty( get_theme_mod( 'set_banner') ) ) : ?>
     <div class="header-top">
       <?php echo get_theme_mod( 'set_banner', '' ); endif; ?>
     </div>

@@ -28,6 +28,10 @@ function cloud_peak_config() {
       'clous_peak_footer_menu' => 'Footer Menu'
     )
   );
+
+  //Theme support
+  add_theme_support( 'title-tag' );
+  add_theme_support( 'custom-logo' );
 }
 
 add_action( 'after_setup_theme', 'cloud_peak_config' );

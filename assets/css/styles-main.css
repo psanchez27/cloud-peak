@@ -21,7 +21,14 @@
 
 .page-container{
   min-height: 100vh;
-  /* Should add width propery */
+  /* Should add width propery?? */
+}
+
+
+
+/* Custom logo */
+img.custom-logo{
+  /* height: 80px; */
 }
 
 
@@ -32,15 +39,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  min-height: 80px;
   transition: .4s ease-in-out;
   padding: 1rem 5vw;
 }
 .header-main nav{
   transition: .4s ease-in-out;
 }
-.branding{
-  font-size: 3em;
+.branding a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branding .site-title{
+  font-size: 2em;
 }
 .branding a{
   color: #fff;
