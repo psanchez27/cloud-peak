@@ -83,6 +83,12 @@ function cloud_peak_customize_css(){ ?>
       }
     }
 
+    /* Logo styles */
+    img.custom-logo{
+      height: <?php echo get_theme_mod( 'set_logo_size' ); ?>px;
+      width: auto;
+    }
+
     /* Footer Style */
       footer{
         background-color: <?php echo get_theme_mod( 'set_footer_background_color' ); ?>;

@@ -256,6 +256,30 @@ $wp_customize->add_control(
     )
   )
 );
+
+
+
+// Site Identity Section**********************************************************************
+$wp_customize->add_setting(
+  'set_logo_size',
+  array(
+    'type' => 'theme_mod',
+    'default' => '110',
+    'sanitize_callback' => 'sanitize_text_field'
+  )
+);
+
+$wp_customize->add_control(
+  'set_logo_size',
+  array(
+    'label' => 'Logo size',
+    'description' => 'Enter only the number value in pixels',
+    'section' => 'title_tagline',
+    'type' => 'text'
+  )
+);
+
+
 }
 
 add_action( 'customize_register', 'cloud_peak_customizer' );
