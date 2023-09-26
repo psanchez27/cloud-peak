@@ -58,6 +58,11 @@ function cloud_peak_customize_css(){ ?>
 <?php endif; ?>
 
   <style>
+    /* Container styles */
+    .container{
+      width: <?php echo get_theme_mod( 'set_container_width' ); ?>px;
+    }
+
     /* Banner alert styles */
       .header-top{
         background-color: <?php echo get_theme_mod( 'set_banner_bg_color' ); ?>;

@@ -24,6 +24,11 @@
   /* Should add width propery?? */
 }
 
+.container{
+  width: 1120px;
+  min-width: 640px;
+}
+
 
 
 /* Custom logo */

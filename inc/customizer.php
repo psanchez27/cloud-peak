@@ -2,7 +2,38 @@
 
 function cloud_peak_customizer( $wp_customize ){
 
-// 1 Header section ****************************************************************************************
+// 1 Layout Section ************************************************************************************
+$wp_customize->add_section(
+  'sec_layout',
+  array(
+    'title' => 'Layout',
+    'description' => 'Set the layout settings for your website.',
+    'priority' => 30
+  )
+);
+
+$wp_customize->add_setting(
+  'set_container_width',
+  array(
+    'type' => 'theme_mod',
+    'default' => '1120',
+    'sanitize_callback' => 'sanitize_text_field'
+  )
+);
+
+$wp_customize->add_control(
+  'set_container_width',
+  array(
+    'label' => 'Container width',
+    'description' => 'Set the width for your site container',
+    'section' => 'sec_layout',
+    'type' => 'text'
+  )
+);
+
+
+
+// 2 Header section ****************************************************************************************
 $wp_customize->add_section(
   'sec_header',
   array(
@@ -182,7 +213,7 @@ $wp_customize->add_control(
   )
 );
 
-// 2 Footer Section ****************************************************************************************
+// 3 Footer Section ****************************************************************************************
 $wp_customize->add_section(
   'sec_footer',
   array(
