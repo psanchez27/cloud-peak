@@ -14,12 +14,15 @@
 <!-- Header banner -->
 <?php if ( ! empty( get_theme_mod( 'set_banner') ) ) : ?>
     <div class="header-top">
-      <?php echo get_theme_mod( 'set_banner', '' ); endif; ?>
+      <div class="container">
+        <?php echo get_theme_mod( 'set_banner', '' ); endif; ?>
+      </div>
     </div>
 
   <!-- Main header -->
   <div class="header-main">
-      <!-- Logo or site title -->
+      <div class="container">
+        <!-- Logo or site title -->
     <div class="branding">
       <?php
         if( has_custom_logo() ) {
@@ -47,6 +50,7 @@
         );
       ?>
     </nav>
+      </div>
   </div>
 
 </header>
