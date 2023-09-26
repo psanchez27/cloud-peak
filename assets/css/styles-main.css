@@ -213,7 +213,7 @@ footer{
 
 /* Blog page & Search results pages*/
 .container.blog-page, .container.search-page, .container.archive-page{
-  max-width: 1260px;
+  /* max-width: 1260px; */
   margin: auto;
 }
 .blog-page h1, .search-page h1, .archive-page h1{
