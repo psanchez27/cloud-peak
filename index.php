@@ -37,6 +37,8 @@
     <!-- End the while loop for posts query -->
     <?php endwhile; ?>
 
+    </div>
+
     <!-- Pagination -->
     <div class="cloud-peak-pagination">
       <div class="left"><?php previous_posts_link( '<< Newer posts' ); ?></div>
@@ -50,7 +52,6 @@
     <!-- End if the block that started the main loop -->
     <?php endif; ?>
 
-  </div>
 
     
 
