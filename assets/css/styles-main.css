@@ -22,6 +22,7 @@
 .page-container{
   min-height: 100vh;
   /* Should add width propery?? */
+  padding: 1rem 5vw;
 }
 
 .container{
