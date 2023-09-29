@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-  <div class="page-container archive-page">
+  <div class="page-container container archive-page">
 
     <!-- Archive content -->
     <?php
