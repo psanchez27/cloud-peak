@@ -21,13 +21,16 @@
 
 .page-container{
   min-height: 100vh;
-  /* Should add width propery?? */
-  padding: 1rem 5vw;
+  padding: 1rem 0;
 }
 
-.container{
-  width: 1120px;
-  min-width: 640px;
+@media only screen and (min-width: 821px){
+  .container{
+    max-width: 1120px;
+    width: 90vw;
+    /* min-width: 640px; */
+    margin: 0 2rem;
+  }
 }
 
 
@@ -50,7 +53,7 @@ img.custom-logo{
   background-color: #222;
   min-height: 80px;
   transition: .4s ease-in-out;
-  padding: 1rem 5vw;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
 }
@@ -58,6 +61,7 @@ img.custom-logo{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .header-main nav{
   transition: .4s ease-in-out;
