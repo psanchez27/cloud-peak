@@ -19,6 +19,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.wp-block-cover.alignfull{
+  /* width: 100vw; */
+}
+
 .page-container{
   min-height: 100vh;
   padding: 1rem 0;
