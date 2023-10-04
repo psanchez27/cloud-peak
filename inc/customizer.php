@@ -290,7 +290,7 @@ $wp_customize->add_control(
 
 
 
-// Site Identity Section**********************************************************************
+// 4 Site Identity Section**********************************************************************
 $wp_customize->add_setting(
   'set_logo_size',
   array(
@@ -306,6 +306,38 @@ $wp_customize->add_control(
     'label' => 'Logo size',
     'description' => 'Enter only the number value in pixels',
     'section' => 'title_tagline',
+    'type' => 'text'
+  )
+);
+
+
+
+// 5 Button Section
+$wp_customize->add_section(
+  'sec_buttons',
+  array(
+    'title' => 'Buttons',
+    'description' => 'Change the settings for your site\'s buttons',
+    'priority' => 60
+  )
+);
+
+//Border Radius
+$wp_customize->add_setting(
+  'set_button_rad',
+  array(
+    'type' => 'theme_mod',
+    'default' => '0',
+    'sanitize_callback' => 'sanitize_text_field'
+  )
+);
+
+$wp_customize->add_control(
+  'set_button_rad',
+  array(
+    'label' => 'Button Radius',
+    'description' => 'Set the button Radius',
+    'section' => 'sec_buttons',
     'type' => 'text'
   )
 );

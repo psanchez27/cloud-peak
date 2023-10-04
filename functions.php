@@ -105,6 +105,11 @@ function cloud_peak_customize_css(){ ?>
         color: <?php echo get_theme_mod( 'set_footer_text_color' ); ?>;
       }
 
+      /* Button styles */
+      :where(.wp-block-button__link){
+        border-radius: <?php echo get_theme_mod( 'set_button_rad' ); ?>px;
+      }
+
   </style>
 
 
