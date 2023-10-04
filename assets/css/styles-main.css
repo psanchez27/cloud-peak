@@ -25,7 +25,7 @@
 
 .page-container{
   min-height: 100vh;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 .page-container *{
@@ -41,12 +41,23 @@
   }
 }
 
+.wp-block-cover__inner-container *{
+ margin: 1rem 0;
+}
+
 
 
 /* Custom logo */
 img.custom-logo{
   height: 110px;
   width: auto;
+}
+
+
+
+/* Button styles */
+:where(.wp-block-button__link){
+  border-radius: 0;
 }
 
 
