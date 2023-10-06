@@ -2,16 +2,13 @@
 
 <main>
   <div class="page-container container">
-    <div class="page-content-container">
+    <?php
+      while( have_posts() ) : the_post();
+    ?>
+    <div class="content">
       <?php
-      while( have_posts() ) {
-        the_post();
-      ?>
-      <div class="page-content">
-        <?php the_content(); ?>
-      </div>
-      <?php
-      }
+        the_content();
+        endwhile;
       ?>
     </div>
   </div>

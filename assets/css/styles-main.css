@@ -11,39 +11,23 @@
   --heading-font: 'Poppins', sans-serif;
   --paragraph-font: 'Poppins', sans-serif;
 }
-
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--heading-font);
+}
+p{
+  font-family: var(--paragraph-font);
 }
 
 .wp-block-cover.alignfull{
-  width: 100vw;
 }
 
-.page-container{
-  min-height: 100vh;
-  /* padding: 1rem 0; */
-}
 
-.page-container *{
-  /* margin: 0 2rem; */
-}
 
-@media only screen and (min-width: 821px){
-  .container{
-    max-width: 1120px;
-    width: 90vw;
-    /* min-width: 640px; */
-    /* margin: 0 2rem; */
-  }
-}
-
-.wp-block-cover__inner-container *{
- margin: 1rem 0;
-}
 
 
 
@@ -55,14 +39,14 @@ img.custom-logo{
 
 
 
-/* Button styles */
+/* Button styles ************************************************************************/
 :where(.wp-block-button__link){
   border-radius: 0;
 }
 
 
 
-/* Header */
+/* Header ************************************************************************/
 .header-top{
   display: flex;
   justify-content: center;
@@ -166,7 +150,7 @@ nav ul li a{
 
 
 
-/* Footer */
+/* Footer ************************************************************************/
 footer{
   background-color: #000;
   color: #fff
@@ -179,28 +163,47 @@ footer{
 
 
 
-/* General Pages */
+/* General Pages ************************************************************************/
 .page-container{
-  /* max-width: 1260px; */
-  /* margin: 2rem auto; */
-  /* padding: 4rem 2rem; */
+  min-height: 100vh;
 }
-
-.page-content-container p{
+.page-container p{
   font-size: 1.4rem;
   line-height: 1.8rem;
   margin: 1rem 0;
-  /* display: flex; */
-  /* justify-content: space-between; */
+}
+.container{
+  
+}
+@media only screen and (min-width: 821px){
+  .container{
+    /* max-width: 1120px; */
+    /* width: 90vw; */
+    /* min-width: 640px; */
+    /* margin: 0 2rem; */
+  }
+}
+.wp-block-cover__inner-container *{
+ margin: 1rem 0;
+}
+
+/* Section Width options */
+.alignwide{
+  width: 1300px;
+  margin: auto;
+}
+.alignfull{
+  width: 100vw;
 }
 
 
 
-/* E404 page */
+
+/* E404 page *************************************************************************/
 .container.e404{
   padding: 4rem 2rem;
 }
-.container h1{
+.container.e404 h1{
   margin: 1rem 0;
 }
 .container.e404 h2{
@@ -236,7 +239,7 @@ footer{
 
 
 
-/* Blog page & Search results pages*/
+/* Blog page & Search results pages ************************************************************************/
 .container.blog-page, .container.search-page, .container.archive-page{
   /* max-width: 1260px; */
   margin: auto;
@@ -292,7 +295,7 @@ footer{
 
 
 
-/* Individual post page */
+/* Individual post page *************************************************************/
 .main-post-content-wrapper{
   max-width: 1260px;
   margin: auto;
@@ -349,7 +352,7 @@ footer{
 
 
 
-/* Sidebar */
+/* Sidebar *************************************************************************/
 .post-page .widget-wrapper ul li{
   margin: 1rem 0;
 }

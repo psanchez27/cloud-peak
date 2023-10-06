@@ -60,8 +60,8 @@ function cloud_peak_customize_css(){ ?>
   <style>
     /* Container styles */
     @media only screen and (max-width: 820px){
-      .container{
-        max-width: <?php echo get_theme_mod( 'set_container_width' ); ?>px;
+      .wp-block-cover__inner-container{
+        /* max-width: <?php echo get_theme_mod( 'set_container_width' ); ?>px; */
       }
     }
 
