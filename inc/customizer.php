@@ -290,7 +290,7 @@ $wp_customize->add_control(
 
 
 
-// 4 Site Identity Section**********************************************************************
+// 4 Site Identity Section **********************************************************************
 $wp_customize->add_setting(
   'set_logo_size',
   array(
@@ -312,7 +312,7 @@ $wp_customize->add_control(
 
 
 
-// 5 Button Section
+// 5 Button Section **********************************************************************
 $wp_customize->add_section(
   'sec_buttons',
   array(
@@ -341,6 +341,22 @@ $wp_customize->add_control(
     'type' => 'text'
   )
 );
+
+
+
+// 6 Typeography Section **********************************************************************
+$wp_customize->add_section(
+  'sec_typeography',
+  array(
+    'title' => 'Typeography',
+    'description' => 'Customize the typeography settings for your site',
+    'priority' => 30
+  )
+);
+
+//heading font
+
+
 
 
 }
