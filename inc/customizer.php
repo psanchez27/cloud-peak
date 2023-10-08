@@ -370,8 +370,18 @@ $wp_customize->add_control(
     'section' => 'sec_typeography',
     'type' => 'select',
     'choices' => array(
-      "'serif'" => 'Serif',
-      "sans-serif" => 'Sans Serif'
+      "serif" => 'Serif',
+      "sans-serif" => 'Sans Serif',
+      "Arial" => 'Arial',
+      "Baskerville" => 'Baskerville',
+      "Bradley Hand" => 'Bradley Hand',
+      "Comic Sans MS" => 'Comic Sans MS',
+      "Courier" => 'Courier',
+      "Georgia" => 'Georgia',
+      "Helvetica" => 'Helvetica',
+      "Luminari" => 'Luminari',
+      "Monaco" => 'Monaco',
+      "Tahoma" => 'Tahoma',
     )
   )
 );
@@ -392,8 +402,18 @@ $wp_customize->add_control(
     'section' => 'sec_typeography',
     'type' => 'select',
     'choices' => array(
-      "'serif'" => 'Serif',
-      "sans-serif" => 'Sans Serif'
+      "serif" => 'Serif',
+      "sans-serif" => 'Sans Serif',
+      "Arial" => 'Arial',
+      "Baskerville" => 'Baskerville',
+      "Bradley Hand" => 'Bradley Hand',
+      "Comic Sans MS" => 'Comic Sans MS',
+      "Courier" => 'Courier',
+      "Georgia" => 'Georgia',
+      "Helvetica" => 'Helvetica',
+      "Luminari" => 'Luminari',
+      "Monaco" => 'Monaco',
+      "Tahoma" => 'Tahoma',
     )
   )
 );
