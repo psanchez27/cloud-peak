@@ -110,6 +110,14 @@ function cloud_peak_customize_css(){ ?>
         border-radius: <?php echo get_theme_mod( 'set_button_rad' ); ?>px;
       }
 
+      /* Typeography */
+      *{
+        font-family: <?php echo get_theme_mod( 'set_paragraph_font' ); ?>;
+      }
+      h1, h2, h3, h4, h5, h6{
+        font-family: <?php echo get_theme_mod( 'set_heading_font' ); ?>;
+      }
+
   </style>
 
 

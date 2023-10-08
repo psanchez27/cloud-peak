@@ -355,7 +355,46 @@ $wp_customize->add_section(
 );
 
 //heading font
+$wp_customize->add_setting(
+  'set_heading_font',
+  array(
+    'type' => 'theme_mod',
+  )
+);
 
+$wp_customize->add_control(
+  'set_heading_font',
+  array(
+    'label' => 'Heading Font',
+    'description' => 'Set your site\'s heading font',
+    'section' => 'sec_typeography',
+    'type' => 'select',
+    'choices' => array(
+      "'Poppins', sans-serif" => 'Poppins',
+    )
+  )
+);
+
+// paragraph font
+$wp_customize->add_setting(
+  'set_paragraph_font',
+  array(
+    'type' => 'theme_mod',
+  )
+);
+
+$wp_customize->add_control(
+  'set_paragraph_font',
+  array(
+    'label' => 'Paragraph Font',
+    'description' => 'Set your site\'s paragraph font',
+    'section' => 'sec_typeography',
+    'type' => 'select',
+    'choices' => array(
+      "'Poppins', sans-serif" => 'Poppins',
+    )
+  )
+);
 
 
 

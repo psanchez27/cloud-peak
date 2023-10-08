@@ -17,10 +17,10 @@
   padding: 0;
 }
 h1, h2, h3, h4, h5, h6{
-  font-family: var(--heading-font);
+  /* font-family: var(--heading-font) */
 }
 p{
-  font-family: var(--paragraph-font);
+  /* font-family: var(--paragraph-font); */
 }
 
 .wp-block-cover.alignfull{
