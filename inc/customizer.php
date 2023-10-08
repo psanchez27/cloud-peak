@@ -370,7 +370,8 @@ $wp_customize->add_control(
     'section' => 'sec_typeography',
     'type' => 'select',
     'choices' => array(
-      "'Poppins', sans-serif" => 'Poppins',
+      "'serif'" => 'Serif',
+      "sans-serif" => 'Sans Serif'
     )
   )
 );
@@ -391,7 +392,8 @@ $wp_customize->add_control(
     'section' => 'sec_typeography',
     'type' => 'select',
     'choices' => array(
-      "'Poppins', sans-serif" => 'Poppins',
+      "'serif'" => 'Serif',
+      "sans-serif" => 'Sans Serif'
     )
   )
 );
