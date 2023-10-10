@@ -418,6 +418,60 @@ $wp_customize->add_control(
   )
 );
 
+// 6 Colors Section ***************************************************************
+$wp_customize->add_section(
+  'sec_colors',
+  array(
+    'title' => 'Colors',
+    'description' => 'Set your site\'s colors',
+    'priority' => 30
+  )
+);
+
+//Primary color
+$wp_customize->add_setting(
+  'set_primary_theme_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#A1CCD1'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'primary_theme_color',
+    array(
+      'label' => 'Primary Color',
+      'description' => 'Set site\'s primary color',
+      'section' => 'sec_colors',
+      'settings' => 'set_primary_theme_color'
+    )
+  )
+);
+
+//Secondary color
+$wp_customize->add_setting(
+  'set_secondary_theme_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#7C9D96'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'secondary_theme_color',
+    array(
+      'label' => 'Secondary Color',
+      'description' => 'Set site\'s secondary color',
+      'section' => 'sec_colors',
+      'settings' => 'set_secondary_theme_color'
+    )
+  )
+);
+
 
 
 }
