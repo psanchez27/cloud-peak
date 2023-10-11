@@ -96,6 +96,10 @@ function cloud_peak_customize_css(){ ?>
       width: auto;
     }
 
+    .header.fixed.scrolled .header-main img.custom-logo{
+      height: calc(<?php echo get_theme_mod( 'set_logo_size' ); ?>px - 30px);
+    }
+
     /* Footer Style */
       footer{
         background-color: <?php echo get_theme_mod( 'set_footer_background_color' ); ?>;
