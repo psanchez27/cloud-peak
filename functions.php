@@ -59,9 +59,10 @@ function cloud_peak_customize_css(){ ?>
 
   <style>
     /* Container styles */
-    @media only screen and (max-width: 820px){
-      .wp-block-cover__inner-container{
-        /* max-width: <?php echo get_theme_mod( 'set_container_width' ); ?>px; */
+    @media only screen and (min-width: 821px){
+      .container, .wp-block-columns{
+        max-width: <?php echo get_theme_mod( 'set_container_width' ); ?>px;
+        --wp--style--global--content-size: <?php echo get_theme_mod( 'set_container_width' ); ?>px;
       }
     }
 
