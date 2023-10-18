@@ -83,6 +83,11 @@ nav ul li a{
 @media only screen and (max-width: 820px){
   .mobile-menu-toggle{
     display: block;
+    border: none;
+    border-radius: 3px;
+  }
+  .header-main .container{
+    width: 90vw;
   }
   .header-main nav{
     position: fixed;
