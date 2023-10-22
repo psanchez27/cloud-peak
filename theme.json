@@ -8,12 +8,12 @@
       "palette": [
         {
           "slug": "primary-color",
-          "color": "#A1CCD1",
+          "color": "#16B4F2",
           "name": "Primary Color"
         },
         {
           "slug": "secondary-color",
-          "color": "#7C9D96",
+          "color": "#9904D9",
           "name": "Seconday Color"
         },
         {
@@ -38,12 +38,12 @@
         },
         {
           "slug": "extra-color-1",
-          "color": "#E9B384",
+          "color": "#5079F2",
           "name": "Extra Color 1"
         },
         {
           "slug": "extra-color-2",
-          "color": "#F4F2DE",
+          "color": "#861BF2",
           "name": "Extra Color 3"
         }
       ]
