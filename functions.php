@@ -25,7 +25,7 @@ function cloud_peak_config() {
   register_nav_menus(
     array(
       'cloud_peak_primary_menu' => 'Main Menu',
-      'clous_peak_footer_menu' => 'Footer Menu'
+      'cloud_peak_footer_menu' => 'Footer Menu'
     )
   );
 
