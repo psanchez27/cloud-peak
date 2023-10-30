@@ -13,7 +13,7 @@
         },
         {
           "slug": "secondary-color",
-          "color": "#9904D9",
+          "color": "#861BF2",
           "name": "Seconday Color"
         },
         {
@@ -43,7 +43,7 @@
         },
         {
           "slug": "extra-color-2",
-          "color": "#861BF2",
+          "color": "#9904D9",
           "name": "Extra Color 3"
         }
       ]
