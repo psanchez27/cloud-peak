@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-  <div class="page-container container blog-page">
+  <div class="page-container blog-page">
 
     <h1><?php wp_title( '' ); ?></h1>
 
