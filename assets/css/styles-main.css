@@ -80,6 +80,28 @@ nav ul li a{
   color: #fff;
   text-decoration: none;
 }
+/* Sub Menu Option */
+.header-main nav ul li{
+  position: relative;
+}
+.header-main nav ul li .sub-menu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: 1px solid #d4d4d4;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.1);
+  z-index: 99;
+  background-color: #fff;
+  width: 250px;
+  padding: 1rem;
+}
+.header-main nav ul li .sub-menu li{
+  margin: 12px 0;
+}
+.header-main nav ul li.menu-item-has-children:hover .sub-menu{
+  display: block;
+}
 /* Mobile Menu */
 .mobile-menu-toggle{
   display: none;
