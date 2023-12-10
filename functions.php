@@ -76,6 +76,7 @@ function cloud_peak_customize_css(){ ?>
       .header-main{
         background-color: <?php echo get_theme_mod( 'set_main_header_bg_color' ); ?>;
         color: <?php echo get_theme_mod( 'set_main_header_text_color' ); ?>;
+        border-bottom: <?php echo get_theme_mod( 'set_header_border_thickness' ); ?>px solid <?php echo get_theme_mod( 'set_header_border_color' ); ?>;
       }
       .header-main a{
         color: <?php echo get_theme_mod( 'set_main_header_text_color' ); ?>;

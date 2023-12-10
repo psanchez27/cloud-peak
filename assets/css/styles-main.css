@@ -46,6 +46,8 @@
   padding: 1rem 0;
   display: flex;
   justify-content: center;
+  border: 0px solid rgba(0,0,0,.1);
+  box-shadow: 1px 1px 10px rgba(0,0,0,.1);
 }
 .header-main .container{
   display: flex;

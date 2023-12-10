@@ -213,6 +213,50 @@ $wp_customize->add_control(
   )
 );
 
+// Border Thickness
+$wp_customize->add_setting(
+  'set_header_border_thickness',
+  array(
+    'type' => 'theme_mod',
+    'default' => '0',
+    'sanitize_callback' => 'sanitize_text_field'
+  )
+);
+
+$wp_customize->add_control(
+  'set_header_border_thickness',
+  array(
+    'label' => 'Header Border Thickness',
+    'description' => 'Set the border thickness for the header',
+    'section' => 'sec_header',
+    'type' => 'text'
+  )
+);
+
+// Border Color
+$wp_customize->add_setting(
+  'set_header_border_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#000',
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_header_border_color_control',
+    array(
+      'label' => 'Header border color',
+      'description' => 'Set the header border color',
+      'section' => 'sec_header',
+      'settings' => 'set_header_border_color'
+    )
+  )
+);
+
+//Border Shadow
+
 // 3 Footer Section ****************************************************************************************
 $wp_customize->add_section(
   'sec_footer',
