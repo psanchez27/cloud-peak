@@ -82,6 +82,11 @@ function cloud_peak_customize_css(){ ?>
         color: <?php echo get_theme_mod( 'set_main_header_text_color' ); ?>;
       }
 
+      /* Sub menu styles */
+      .header-main nav ul li .sub-menu{
+        border-radius: <?php echo get_theme_mod( 'set_sub_menu_border_radius' ); ?>px;
+      }
+
     /* Mobile menu styles */
     @media only screen and (max-width: 820px){
       .header-main nav{

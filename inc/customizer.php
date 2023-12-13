@@ -257,6 +257,27 @@ $wp_customize->add_control(
 
 //Border Shadow
 
+//Border Radius
+$wp_customize->add_setting(
+  'set_sub_menu_border_radius',
+  array(
+    'type' => 'theme_mod',
+    'default' => '0',
+    'sanitize_callback' => 'sanitize_text_field'
+  )
+);
+
+$wp_customize->add_control(
+  'set_sub_menu_border_radius',
+  array(
+    'label' => 'Sub Menu Border Radius',
+    'description' => 'Set the radius for the sub menu',
+    'section' => 'sec_header',
+    'type' => 'text'
+  )
+);
+
+
 // 3 Footer Section ****************************************************************************************
 $wp_customize->add_section(
   'sec_footer',
