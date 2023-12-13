@@ -213,6 +213,48 @@ $wp_customize->add_control(
   )
 );
 
+//Menu link hover borer bottom thickness
+$wp_customize->add_setting(
+  'set_menu_hover_border_bottom',
+  array(
+    'type' => 'theme_mod',
+    'default' => '0',
+    'sanitize_callback' => 'sanitize_text_field'
+  )
+);
+
+$wp_customize->add_control(
+  'set_menu_hover_border_bottom',
+  array(
+    'label' => 'Menu link hover borer bottom',
+    'description' => 'Set the border thickness for the botom borer on a menu link when hovering over the link',
+    'section' => 'sec_header',
+    'type' => 'text'
+  )
+);
+
+//Menu link hover borer bottom color
+$wp_customize->add_setting(
+  'set_menu_hover_border_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#000'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_menu_hover_border_color_control',
+    array(
+      'label' => 'Menu Link Hover Border Color',
+      'description' => 'Set the color fo the bottom borer upon hovering over a nav link in the header.',
+      'section' => 'sec_header',
+      'settings' => 'set_menu_hover_border_color'
+    )
+  )
+);
+
 // Border Thickness
 $wp_customize->add_setting(
   'set_header_border_thickness',
@@ -257,7 +299,7 @@ $wp_customize->add_control(
 
 //Border Shadow
 
-//Border Radius
+//Sub menu Border Radius
 $wp_customize->add_setting(
   'set_sub_menu_border_radius',
   array(
@@ -276,6 +318,7 @@ $wp_customize->add_control(
     'type' => 'text'
   )
 );
+
 
 
 // 3 Footer Section ****************************************************************************************

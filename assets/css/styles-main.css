@@ -82,6 +82,9 @@ nav ul li a{
   color: #fff;
   text-decoration: none;
 }
+.header-main nav a:hover{
+  border-bottom: 0px solid #000;
+ }
 /* Sub Menu Styes */
 .header-main nav ul li{
   position: relative;
