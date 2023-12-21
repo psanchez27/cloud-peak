@@ -237,14 +237,13 @@ footer{
 
 /* Section Width options */
 .alignwide{
-  width: 1300px;
+  width: 90%;
   margin: auto;
 }
 .alignfull{
   width: 100%;
   padding: 0;
 }
-
 
 
 
