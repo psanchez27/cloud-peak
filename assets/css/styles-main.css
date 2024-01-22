@@ -73,6 +73,7 @@
 nav ul{
   list-style: none;
   display: flex;
+  align-items: center;
 }
 nav ul li{
   margin: 0 1rem;
@@ -85,6 +86,14 @@ nav ul li a{
 .header-main nav a:hover{
   border-bottom: 0px solid #000;
  }
+ .special-nav-link{
+  background-color: #164863;
+ }
+ .special-nav-link a{
+  color: #fff !important;
+ }
+ 
+
 /* Sub Menu Styes */
 .header-main nav ul li{
   position: relative;
