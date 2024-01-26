@@ -153,6 +153,9 @@ nav ul li a{
   .header-main nav ul li{
     margin: 1rem 0;
   }
+  nav ul{
+    align-items: flex-start;
+  }
 }
 
 /* Custom logo */
